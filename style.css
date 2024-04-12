@@ -1,0 +1,270 @@
+body{
+background-color: #7f7f8288;
+margin: 0;
+padding: 0;
+}
+
+nav{  
+position: fixed;
+background-color: rgba(255, 255, 255, 0.934);
+width: 100%;
+height: 45px;
+padding: 0;
+margin:-8px;
+}
+
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-right: 2%;
+}
+
+.burger-btn{
+  display: flex;
+  flex-direction:column;
+    color: #f8fdf9;
+    padding: 5px;
+    margin-top:-40px;
+    font-size: 18px;
+    border: none;
+    margin-left: 90%;
+    margin-bottom: 20px;
+}
+
+.menu-content {
+    display: none;
+    position:absolute;
+    background-color: #f3f1f2;
+    min-width: 10px;
+    box-shadow: 0px 18px 16px 0px #78787de4;
+    z-index: 1;
+    margin-left:90%;
+    margin-top:-0.5%;
+}
+
+.menu-content a{
+    color: #1e1a1a;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-content a:hover{
+    background-color: #a3aca6;
+    }
+    
+    .menu:hover .menu-content{
+      display: block;
+    }
+    
+    .menu:hover .burger-btn{
+      background-color: rgba(124, 125, 125, 0.747);
+    }
+    
+    .item{
+      scroll-margin-top:2%;
+      padding: 2%;
+    }
+    
+    html{
+      scroll-behavior:auto;
+    }
+
+ .imgbody{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  width: 100%;
+  margin: 13px auto;
+  padding-top: 30px;
+  margin-top: 5%;
+  margin-right: 20%;
+  background-color: #919898;
+}
+.perfil_img{
+  flex: -1;
+  max-width: 25%;
+  height: auto;
+  margin-right: 5%;
+}
+.perfil_img img{
+  max-width: 500%;
+  height: auto;
+  border-radius: 50%;
+}
+.txtcontent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  flex: -1;
+  line-height: 2;
+  max-width: 600px;
+}
+
+.txtcontent p {
+  font-size: 1em;
+  color: #131212;
+}
+
+.txtimg {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+    font-size:25px;
+    color:rgb(25, 25, 25);
+    width: 100%;
+    background-color: #919898;
+    text-align: center;
+}
+
+.espacio{
+  display: flex;
+  flex-direction:column;
+  text-align: center;
+  color: #141414;
+  font-size:20px;
+  text-decoration:double;
+  margin-top:14%;
+  width:95%;
+  background-color: #919898;
+  line-height:1;
+   }
+
+   .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    color: #080808;
+}
+
+.service-card {
+    width: 350px;
+    background-color: #f5ecec;
+    border-radius: 35px;
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 10px 20px 30px rgba(108, 109, 108, 0.977);
+}
+.p{
+  font-size: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+ 
+    color: #141313;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:oblique;
+    line-height: 1.5;
+    text-align:left;
+}
+
+section {
+  padding:40px;
+}
+
+h1{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #080808;
+  text-decoration:underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #9e9797;
+}
+
+label{
+  width: 30px;
+  font-size: 20px;
+  text-transform: capitalize;  
+}  
+
+button {
+  background-color: #6b6c6c;
+  color: #f6f0f0;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+columns: 3;
+margin-top: 5%;
+margin-left: 3%;
+}
+
+.info{  
+  color: #0e0d0d;
+  flex: 1;
+  padding: -1px 40px;
+  background-color: #919898;
+}
+
+h3{
+  text-align: center;
+  color:rgb(17, 18, 17)
+}
+
+
+/* Media query para dispositivos más pequeños */
+
+@media only screen and (max-width: 600px) {
+  
+  
+  .imgbody {
+      flex-direction: column; 
+      margin-left:-8%;
+      min-width:370px;
+      font-size: 25px;
+  }
+
+  .perfil_img{
+      margin-right: 50%; 
+      margin-bottom: 20px; 
+      font-size: 20px;
+  }
+
+  p{
+    min-width:330px;
+      font-size: 20px;
+  }
+
+  .txtimg{
+    width: 115%;
+    height: 200px;
+    margin-left:-8%;
+  }
+
+  .espacio{
+    width: 115%;
+    height: 900px;
+    margin-left:-8%;
+    font-size: 40px;
+    font-style: italic;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+  columns: 3;
+  margin-top: 5%;
+  margin-left: 3%;
+  }
+}
